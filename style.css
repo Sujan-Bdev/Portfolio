@@ -305,72 +305,130 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
-
+/* About Section */
+/* About Section */
 #about {
+  padding: 4rem 0;
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+.section-header {
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.section-container {
+  justify-content: center; /* Changed from space-between to center */
   gap: 4rem;
-  height: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.about__pic-container {
-  height: 28rem;
-  width: 60rem;
-  margin: auto 0;
-  overflow: hidden;
-  border: 1px solid #343a40;
+.about-image {
+  flex: 0 0 35%; /* Changed from flex:1 to fixed ratio */
+  max-width: 400px; /* Added max-width constraint */
+  min-width: 250px; /* Reduced from 300px */
   border-radius: 2rem;
-  box-shadow: 2px 8px 5px -4px rgba(0,0,0,0.75);
-
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.about-pic {
-  margin-top: -2rem;
-
-  /* filter: grayscale(100%); */
+.about-image:hover {
+  transform: translateY(-5px);
 }
 
+.about-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover .about-img {
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px; /* Added max-width for better text readability */
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .about-image {
+    flex: 0 0 auto;
+    width: 60%;
+    max-width: 350px; /* Smaller max-width for tablet */
+  }
+  
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-content {
+    padding: 0 1.5rem;
+  }
+  
+  .about-image {
+    width: 70%;
+    max-width: 300px; /* Even smaller for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+  
+  .about-image {
+    width: 80%;
+    min-width: auto;
+    max-width: 250px; /* Smallest size for mobile */
+  }
+}
 
 /* SKILLS SECTION */
 
@@ -481,7 +539,92 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
 
+.project-card {
+  background: rgb(250, 250, 250);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-title {
+  margin: 1rem 0;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-card {
+    max-width: 100%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .project-buttons .btn {
+    width: 100%;
+  }
+  
+  .project-image-container {
+    height: 180px;
+  }
+}
 #projects {
   position: relative;
   margin-top: 2rem;

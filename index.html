@@ -78,32 +78,33 @@
     </section>
 
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about__pic-container">
+      <div class="section-header">
+        <p class="section-subtitle">Get To Know More</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image">
           <img
             src="./assets/sujan.png"
-            alt="Profile picture"
-            class="about-pic"
-
+            alt="Sujan Budhathoki profile picture"
+            class="about-img"
           />
         </div>
-        <div class="about-details-container">
-          <div class="text-container">
-            <p>
-              Welcome! I'm Sujan, a professional frontend developer with a knack
-              for crafting visually stunning and highly functional websites.
-              Combining creativity and technical expertise. I transform your
-              vision into digital masterpiece that excels in both appearance and
-              performance.
-            </p>
-          </div>
+
+        <div class="about-text">
+          <p class="about-description">
+            Welcome! I'm Sujan, a professional frontend developer with a knack
+            for crafting visually stunning and highly functional websites.
+            Combining creativity and technical expertise, I transform your
+            vision into digital masterpieces that excel in both appearance and
+            performance.
+          </p>
         </div>
       </div>
     </section>
 
-    <div class="timeline-container">
+    <section class="timeline-container" id="experience">
       <h1 class="timeline__title">My Journey</h1>
       <div class="timeline-header">
         <h2>Education</h2>
@@ -158,7 +159,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section id="skills">
       <p class="section__text__p1">Explore My</p>
@@ -177,11 +178,7 @@
                 <p class="skill__title">ReactJs</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/nextjs.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/nextjs.svg" alt="" class="skill__img" />
                 <p class="skill__title">NextJS</p>
               </div>
               <div class="skill__item">
@@ -193,11 +190,7 @@
                 <p class="skill__title">JavaScript</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/typescript.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/typescript.svg" alt="" class="skill__img" />
                 <p class="skill__title">TypeScript</p>
               </div>
               <div class="skill__item">
@@ -225,11 +218,7 @@
                 <p class="skill__title">Tailwind</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/shadecn.png"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/shadecn.png" alt="" class="skill__img" />
                 <p class="skill__title">ShadeCN</p>
               </div>
               <div class="skill__item">
@@ -253,118 +242,64 @@
           <div class="skills__containers--item">
             <h2 class="experience-sub-title">Backend</h2>
             <div class="skill__list">
-                <div class="skill__item">
-                <img
-                  src="./assets/node.svg"
-                  alt=""
-                  class="skill__img"
-                />
+              <div class="skill__item">
+                <img src="./assets/node.svg" alt="" class="skill__img" />
                 <p class="skill__title">NodeJS</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/express.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/express.svg" alt="" class="skill__img" />
                 <p class="skill__title">ExpressJS</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/adonisjs.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/adonisjs.svg" alt="" class="skill__img" />
                 <p class="skill__title">AdonisJS</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/graphql.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/graphql.svg" alt="" class="skill__img" />
                 <p class="skill__title">GraphQL</p>
               </div>
-              
+
               <div class="skill__item">
-                <img
-                  src="./assets/drizzle.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/drizzle.svg" alt="" class="skill__img" />
                 <p class="skill__title">Drizzle</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/mysql.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/mysql.svg" alt="" class="skill__img" />
                 <p class="skill__title">MySQL</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/postgresql.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/postgresql.svg" alt="" class="skill__img" />
                 <p class="skill__title">Postgresql</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/mongodb.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/mongodb.svg" alt="" class="skill__img" />
                 <p class="skill__title">MondoDB</p>
               </div>
-              
             </div>
           </div>
           <div class="skills__containers--item">
             <h2 class="experience-sub-title">Others</h2>
             <div class="skill__list">
               <div class="skill__item">
-                <img
-                  src="./assets/git.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/git.svg" alt="" class="skill__img" />
                 <p class="skill__title">Git</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/github.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/github.svg" alt="" class="skill__img" />
                 <p class="skill__title">GitHub</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/postman.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/postman.svg" alt="" class="skill__img" />
                 <p class="skill__title">Postman</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/jira.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/jira.svg" alt="" class="skill__img" />
                 <p class="skill__title">Jira</p>
               </div>
               <div class="skill__item">
-                <img
-                  src="./assets/npm.svg"
-                  alt=""
-                  class="skill__img"
-                />
+                <img src="./assets/npm.svg" alt="" class="skill__img" />
                 <p class="skill__title">NPM</p>
               </div>
-              
             </div>
           </div>
         </div>
@@ -374,7 +309,83 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Project One</h2>
+            <div class="project-buttons">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Project Two</h2>
+            <div class="project-buttons">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">Project Three</h2>
+            <div class="project-buttons">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -447,7 +458,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
